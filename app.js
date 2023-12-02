@@ -68,4 +68,28 @@ let news = {
 
 }
 
+function search(cat){
+    mainPage = 0;
+    finalPage = quantityNews;
+    currentTopic = cat;
+    news.fetchNews(cat);
+}
+
+function searchTopic(){
+    mainPage = 0;
+    finalPage = quantityNews;
+
+    let topic = document.querySelector('#shg').value;
+    currentTopic = topic;
+    news.fetchNews(currentTopic);
+}
+
+function next(){
+    mainPage = finalPage + 1;
+    finalPage = finalPage + quantityNews + 1;
+    // I delete next button
+    document.querySelector('#nextBtn').remove();
+    news.fetchNews(currentTopic);
+}
+
 news.fetchNews(currentTopic);
