@@ -54,7 +54,8 @@ let news = {
         item.appendChild(h2);
         item.appendChild(img);
         item.appendChild(info_item);
-        item.setAttribute('onclick', 'location.href=" + url + "')
+        item.setAttribute('onclick', 'location.href="' + url + '"');
+
         document.querySelector('.news-container').appendChild(item);
     }
 
