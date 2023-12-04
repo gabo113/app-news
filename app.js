@@ -94,3 +94,8 @@ function next(){
 }
 
 news.fetchNews(currentTopic);
+
+function toggleMenu() {
+    const burgerMenu = document.querySelector('.burger-menu');
+    burgerMenu.classList.toggle('open');
+  }

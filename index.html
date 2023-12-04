@@ -9,16 +9,25 @@
 </head>
 <body>
     <div class="container">
-        <h1>El NotiociOso</h1>
+            <!-- Icono de hamburguesa -->
+            <div class="burger-menu" onclick="toggleMenu()">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
         <header>
+            <img src="img/logo.svg" alt="logo">
             <nav>
-                <span class="cat" onclick="search('technology')">Technology</span>
-                <span class="cat" onclick="search('business')">Business</span>
-                <span class="cat" onclick="search('sports')">Sports</span>
-                <span class="cat" onclick="search('science')">Science</span>
-                <span class="cat" onclick="search('health')">Health</span>
+                <ul>
+                    <li class="cat"><a href="#">Inicio</a></li>
+                    <li class="cat" onclick="search('technology')">Technology</li>
+                    <li class="cat" onclick="search('business')">Business</li>
+                    <li class="cat" onclick="search('sports')">Sports</li>
+                    <li class="cat" onclick="search('science')">Science</li>
+                    <li class="cat" onclick="search('health')">Health</li>
+                </ul>
             </nav>
-            <div class="searching">
+            <div class="search">
                 <input type="text" placeholder="Can I help you search?" id="shg">
                 <button onclick="searchTopic()">Buscar</button>
             </div>
